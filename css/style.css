@@ -1,24 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Condensed&display=swap');
 
+/* Fuentes */
 .fontText{
   font-family: 'Roboto Condensed', sans-serif;
 }
 .fontTitle{
   font-family: 'Press Start 2P', cursive;
 }
-
-body{
-  background: #D6EAF8 ;
+.fontColor{
+  color: #0065a3;
 }
+.fontColor:hover{
+  color: white;
+}
+
+/* fondos de colores */
 
 .bg-nav{
-  background-color: #e7008a;
-  border-bottom: 1px solid #ff74da;
+  background-color: #f7f3cf;
+}
+.bg-foot{
+  background-color: #176585;
+}
+#bg-index{
+  background-color: #00a0b0;
+}
+#bg-about{
+  background-color: #c2e4cb;
+}
+/* imagen */
+.box-img{
+  height: 20rem;
+  width: 20rem;
 }
 
-.box-mv{
-  width: 300px;
-  height: 100px;
-  background-color: #FDEBD0;
-
-}
+/* .ft-position{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */

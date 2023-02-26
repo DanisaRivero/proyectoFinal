@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="CV - Danisa Rivero">
+    <meta property="og:type" content="portfolio">
+    <meta property="og:url" content="http://www.example.com">
+    <meta property="og:image" content="http://www.example.com/image.jpg">
+    <meta property="og:description" content="Página tipo portfolio/curriculum vitae que también es mi proyecto final de Front end">
     <meta name="author" content="" />
     <meta
       name="description"
-      content="Esta página es mi curriculum vitae y mi proyecto final integrador"
+      content="Esta página es mi curriculum vitae y mi proyecto final integrador de Front end"
+    />
+    <meta
+      name="keywords"
+      content="proyecto, cv, curriculum vitae, pagina web, html, css"
     />
     <link
       rel="shortcut icon"
@@ -25,15 +34,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <meta
-      name="keywords"
-      content="proyecto, cv, curriculum vitae, pagina web, html, css"
-    />
     <title>CV - Danisa Rivero</title>
   </head>
-  <body id="bg-index">
+  <body">
     <header>
-      <nav class="navbar navbar-expand-lg bg-nav p-3 fontTitle fs-6">
+      <nav class="navbar navbar-expand-lg bg-nav-foot p-3 fontTitle fs-6">
         <div class="container">
           <a class="navbar-brand pe-2 fontColor active" href="index.html"
             >Inicio</a
@@ -70,26 +75,27 @@
       </nav>
     </header>
     <main>
-      <section class="container position-absolute top-5 mt-5">
-        <h1 class="fontTitle text-center">¡Bienvenidos a mi página!</h1>
-      </section >
       <section>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="position-relative top-0 z-n1"
           viewBox="0 0 1440 320"
         >
           <path
-            fill="#c2e4cb"
+            fill="#680148"
             fill-opacity="1"
             d="M0,224L80,234.7C160,245,320,267,480,245.3C640,224,800,160,960,149.3C1120,139,1280,181,1360,202.7L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
           ></path>
         </svg>
       </section>
+      <section  class="container">
+        <h1 class="fontTitle text-center">¡Bienvenidos a mi página web!</h1>
+        <br>
+        <h3 class="fontTitle text-center ms-5">En esta sección encontrarás información sobre mis proyectos</h3>
+      </section >
 
+      <section></section>
 
-      <section class="container container-logo">
-
+      <!-- <section class="container container-logo">
         <ul class="columnas">
           <li class="fondo-1 li-colum rounded-circle">
             <span class="base"></span>
@@ -123,16 +129,16 @@
         </span>
         </li> -->
 
-        </ul>
-      </section>
+        <!-- </ul>
+      </section> -->
             
           
             
           
     
     </main>
-    <footer class="bg-foot p-2 mt-3">
-      <p class="fontText text-center fs-3 pt-1 text-light">
+    <footer class="bg-nav-foot p-2 mt-3">
+      <p class="fontText text-center fs-3 pt-1 text-light"">
         &copy; Todos los derechos reservados - Danisa Rivero
       </p>
     </footer>

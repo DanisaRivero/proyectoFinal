@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Condensed&display=swap');
 
-/* Fuentes */
+/*! Fuentes */
 .fontText{
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -14,14 +14,20 @@
   color: rgb(255, 45, 45);
   text-decoration:underline white
 }
+.fontColor2{
+  color: rgb(203, 203, 203);
+}
 
-/* fondos de colores */
+/*! fondos de colores */
 
 .bg-nav-foot{
   background-color: #000000;
 }
-#bg-index{
-  background-color: #7ee1b1;
+.section-index{
+  background: #b785a2;
+}
+.card-projects{
+  background: #e7d5df;
 }
 #bg-about{
   background-color: #c2e4cb;
@@ -36,7 +42,20 @@
   border: 1px solid black;
 }
 
-/* logos en index */
+
+/* .box-img-index{
+  width: 100%;
+  border-radius: 20px;
+} */
+.box-img-index2{
+  background-color: #e7d5df;
+  padding-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+/*? logos en index */
 .container-logo{
   width: 100%;
   height: 100%;
@@ -154,8 +173,13 @@
 
 
 
-
+/*? Media queries */
 @media screen and (max-width: 767px) {
+  
+  .section-index{
+    margin-top: 45px;
+  }
+  
   .columnas{
     display: flex;
     flex-direction: column;

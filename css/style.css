@@ -38,20 +38,15 @@
 /* imagen en sobre mi*/
 .box-img{
   width: 550px;
-  height: 600px;
+  height: 650px;
   border: 1px solid black;
+
 }
 
-
-/* .box-img-index{
-  width: 100%;
-  border-radius: 20px;
-} */
-.box-img-index2{
-  background-color: #e7d5df;
-  padding-bottom: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+.box-img-index{
+  width: 400px;
+  height: 350px;
+  border: 2px solid rgb(255, 192, 255);
 }
 
 
@@ -175,7 +170,9 @@
 
 /*? Media queries */
 @media screen and (max-width: 767px) {
-  
+  .svg-index{
+    margin-top: 70px;
+  }
   .section-index{
     margin-top: 45px;
   }

@@ -209,7 +209,6 @@
   }
   .box-img-index {
     margin-top: 40px;
-    margin-left: 45px;
   }
 
   .box-img-about {
@@ -233,6 +232,7 @@
   }
   #box-about{
     height: 350px;
+
   }
   .bg-light{
     width: 300px;
@@ -254,6 +254,9 @@
     height: 60%;
     margin-top: 40px;
     margin-bottom: 20px;
+  }
+  #box-about{
+    height: 300px;
   }
 
 }

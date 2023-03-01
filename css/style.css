@@ -1,57 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Condensed&display=swap");
 
 /*! Fuentes */
-.fontText{
-  font-family: 'Roboto Condensed', sans-serif;
+.fontText {
+  font-family: "Roboto Condensed", sans-serif;
 }
-.fontTitle{
-  font-family: 'Press Start 2P', cursive;
+.fontTitle {
+  font-family: "Press Start 2P", cursive;
 }
-.fontColor{
+.fontColor {
   color: #bae3ff;
 }
-.fontColor:hover{
+.fontColor:hover {
   color: rgb(255, 45, 45);
-  text-decoration:underline white
+  text-decoration: underline white;
 }
-.fontColor2{
+.fontColor2 {
   color: rgb(203, 203, 203);
 }
 
 /*! fondos de colores */
 
-.bg-nav-foot{
+.bg-nav-foot {
   background-color: #000000;
 }
-.section-index{
+.section-index {
   background: #b785a2;
 }
-.card-projects{
+.card-projects {
   background: #e7d5df;
 }
-#bg-about{
-  background-color: #c2e4cb;
-}
-.container-about{
-  background-color: #90c698;
-}
-/* imagen en sobre mi*/
-.box-img{
-  width: 550px;
-  height: 650px;
-  border: 1px solid black;
 
-}
 
-.box-img-index{
+.box-img-index {
   width: 400px;
   height: 350px;
-  border: 2px solid rgb(255, 192, 255);
 }
 
+#box-about{
+  width: 600px;
+  height: 300px;
+  background: #e7d5df;
+  margin: 20px 0px;
+  padding-top: 25px;
+}
 
+/* botones */
+.btn-outline-primary {
+  background: #b785a2;
+  border: #b785a2;
+  color: black;
+}
+.btn-outline-primary:hover {
+  background-color: #fdb7de;
+  border: 2px solid rgb(255, 192, 255);
+}
 /*? logos en index */
-.container-logo{
+.container-logo {
   width: 100%;
   height: 100%;
   display: flex;
@@ -59,7 +63,7 @@
   align-items: center;
 }
 
-.columnas{
+.columnas {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,7 +71,7 @@
   list-style-type: none;
 }
 
-.columnas .li-colum{
+.columnas .li-colum {
   position: relative;
   display: grid;
   place-items: center;
@@ -76,7 +80,7 @@
   margin: 20px 0;
 }
 
-.li-colum .base{
+.li-colum .base {
   position: relative;
   width: 100%;
   height: 100%;
@@ -88,15 +92,15 @@
 }
 
 @keyframes spin {
-  0%{
-    transform: rotateX('60deg') rotateZ('0');
+  0% {
+    transform: rotateX("60deg") rotateZ("0");
   }
-  100%{
-    transform: rotateX('60deg') rotateZ('-360deg');
+  100% {
+    transform: rotateX("60deg") rotateZ("-360deg");
   }
 }
 
-.li-colum .base::after{
+.li-colum .base::after {
   position: absolute;
   content: "";
   width: 30px;
@@ -107,14 +111,16 @@
   background-color: var(--color);
 }
 
-.li-colum .base, .li-colum .title, .li-colum .icon{
+.li-colum .base,
+.li-colum .title,
+.li-colum .icon {
   position: absolute;
   color: #040404;
   transform: rotateX(60deg) rotateZ(-45deg);
   transition: 0.5s ease-in-out;
 }
 
-.li-colum .icon{
+.li-colum .icon {
   display: grid;
   place-items: center;
   font-size: 80px;
@@ -122,20 +128,19 @@
   pointer-events: none;
 }
 
-.base:hover{
+.base:hover {
   filter: drop-shadow(0 0 10px var(--color));
   animation-play-state: paused;
-  
 }
 
-.base:hover + .title + .icon{
+.base:hover + .title + .icon {
   transform: rotateX(30deg) rotateZ(-24deg) translateY(-160px);
   color: var(--color);
   filter: drop-shadow(0 0 3px var(--color));
   animation: wave 1s ease-in-out infinite;
 }
 
-.base:hover + .title{
+.base:hover + .title {
   transform: rotateX(30deg) rotateZ(-24deg) translateY(-90px);
   color: var(--color);
   filter: drop-shadow(0 0 3px var(--color));
@@ -145,42 +150,64 @@
 }
 
 @keyframes wave {
-  0%, 100%{
+  0%,
+  100% {
     margin-bottom: 0;
   }
-  50%{
+  50% {
     margin-bottom: 15px;
   }
 }
 
-.fondo-1{
+.fondo-1 {
   background-color: #ef436b;
 }
-.fondo-2{
+.fondo-2 {
   background-color: #1a63f5;
 }
-.fondo-3{
+.fondo-3 {
   background-color: #efe420;
 }
-.fondo-4{
+.fondo-4 {
   background-color: #712cf9;
 }
 
-
-
 /*? Media queries */
 @media screen and (max-width: 767px) {
-  .svg-index{
+  .media-pmg {
+    justify-content: center;
+  }
+  .box-img-index {
+    margin: 20px 0;
+  }
+
+  .svg-index {
     margin-top: 70px;
   }
-  .section-index{
+  .section-index {
     margin-top: 45px;
   }
-  
-  .columnas{
+
+  .columnas {
     display: flex;
     flex-direction: column;
     margin: 40px 0px;
     margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .media-pmg {
+    justify-content: center;
+  }
+  .box-img-index {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .box-img-index {
+    margin-left: 10px;
+    width: 310px;
   }
 }

@@ -42,6 +42,7 @@
   background: #e7d5df;
   margin: 20px 0px;
   padding-top: 25px;
+  padding-top: 25px;
 }
 
 /* botones */
@@ -53,6 +54,26 @@
 .btn-outline-primary:hover {
   background-color: #fdb7de;
   border: 2px solid rgb(255, 192, 255);
+}
+.icons-size{
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+.icons-color{
+  color: #3B5998;
+}
+.icons-color2{
+  color: #8134Af; 
+}
+.icons-color3{
+  color: #000000;
+}
+.icons-color4{
+  color: #0077b5;
+}
+.div-footer{
+  background: #680148;
 }
 /*? logos en index */
 .container-logo {
@@ -178,7 +199,7 @@
     justify-content: center;
   }
   .box-img-index {
-    margin: 20px 0;
+    margin: 40px;
   }
 
   .svg-index {
@@ -193,6 +214,12 @@
     flex-direction: column;
     margin: 40px 0px;
     margin-right: 15px;
+  }
+  #box-about{
+    height: 350px;
+  }
+  .bg-light{
+    width: 300px;
   }
 }
 
@@ -209,5 +236,8 @@
   .box-img-index {
     margin-left: 10px;
     width: 310px;
+  }
+  .bg-light{
+    width: 300px;
   }
 }
